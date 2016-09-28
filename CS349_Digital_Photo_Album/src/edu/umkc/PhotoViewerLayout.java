@@ -74,6 +74,7 @@ public class PhotoViewerLayout extends JFrame {
 
         JPanel southButtonPanel = new JPanel();
         pictureNumberTextField = new JTextField(PhotoViewerModel.getCurrentPhotoNumber(),4);
+        pictureNumberTextField.addActionListener(e -> PhotoViewerModel.search());
         pictureCountLabel = new JLabel(" of " + PhotoViewerModel.getPhotoCount());
         prevButton = new JButton(ResourceBundle.getBundle("PhotoAlbumStrings").getString("Previous"));
         prevButton.addActionListener(e -> PhotoViewerModel.prevButton());

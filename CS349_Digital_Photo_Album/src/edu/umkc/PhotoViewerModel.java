@@ -131,4 +131,12 @@ public class PhotoViewerModel {
             descriptionTextArea.setText(photos.get(currentPhotoNumber - 1).getDescription());
         }
     }
+
+    public static void search() {
+        int search = Integer.parseInt(pictureNumberTextField.getText());
+        if (search <= photoCount && search > 0){
+            currentPhotoNumber = search;
+        }
+        updateUI();
+    }
 }
