@@ -1,5 +1,6 @@
 package edu.umkc;
 
+
 import javax.swing.*;
 
 public class Main {
@@ -7,7 +8,8 @@ public class Main {
         //create and show GUI.
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
-                PhotoViewerLayout.createAndShowGUI();
+
+                MainLayout.createAndShowGUI();
             }
         });
     }
